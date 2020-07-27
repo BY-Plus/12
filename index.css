@@ -1,0 +1,128 @@
+/* h3{
+    color:pink;
+    text-align:center;
+}
+h1{
+    color: yellow;
+}
+h2{
+    color: wheat;
+}
+h3{
+    color: turquoise;
+} */
+/* px:pixel, picture element;像素; */
+h1{
+    /* 宽高；默认指内容的宽高 */
+    width: 600px;
+    height: 400px;
+
+    /* padding:内边距,是标签边框到内容之间的距离；分为上-右-下-左四个方向。
+    top:上；right：右；bottom:下；left:左。
+     */
+    /* padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px; */
+    /* 
+    简写
+    padding/margin : 四个值，顺序（顺时针，上右下左）
+    padding/margin:两个值,顺序（上下，左右）
+    padding/margin:三个值，顺序（上、左右、下）
+    padding/margin:一个值,四个方向相同 
+    */
+    /* padding:10px 20px 30px 40px ; */
+    /* padding: 10px 20px; */
+    /* padding: 10px 20px 30px; */
+    padding: 10px;
+
+
+    /* border:边框；可以设置边框的颜色、样式、宽度; 也可以分别设置上-右-下-左四个方向边框;
+    color:颜色；style：样式、风格；width:宽度;
+    线形:
+        solid:实线；dashed:虚线；dotted:点.... */
+    /* border-color: blue;
+    border-style: dotted;
+    border-width: 20px;
+    border-top-color:yellow ;
+    border-top-width: 30px; */
+    /* 
+    可以单独设置某个方向边框的三个值
+        border-方向：颜色  线形 宽度;
+    也可以统一设置四个方向
+        border:颜色  线形 宽度;
+    */
+    /* border-top:red solid 10px ; */
+    border: springgreen solid 20px;
+
+    /* 边框圆角
+    radius:半径；在边框交界处，以指定半径画圆，与边框线外侧相切。 */
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 40px; */
+
+    /* border-radius:40px ; */
+
+    /* margin:外边距，标签的边框到父元素、相邻元素边框的距离 */
+    /* margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px; */
+    margin: 20px 40px;
+}
+
+h2{
+    width: 200px;
+    height:200px;
+    border: red solid 10px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    /* margin: 40px; */
+}
+
+h3{
+    width: 200px;
+    height: 200px;
+    border: green dashed 5px;
+    border-radius: 100px;
+}
+
+/* 三角形 
+transparent:透明色
+*/
+h4{
+    /* border-top: 50px solid transparent; */
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid red;
+    border-left: 50px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+/* ☆；❤ */
+
+a{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    padding: 40px;
+    margin: 10px 30px;
+    display: inline-block;
+}
+
+img{
+    /* 图片，一般只设置宽或者高，另一个方向自动缩放；防止图片变形。 */
+    width: 200px;
+    padding: 30px;
+    margin: 20px;
+}
+
+span{
+    color: red;
+}
+
+
+
+
+
