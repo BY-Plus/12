@@ -1,0 +1,54 @@
+div{
+    width:250px;
+    padding: 20px;
+    border: 1px solid lightgrey;
+}
+div:hover{
+    border-color: red;
+}
+div>img{
+    width: 100%;
+}
+.title>span{
+    background-color: green;
+    color: white;
+    font-size: 13px;
+    padding: 2px ;
+    border-radius: 2px;
+}
+.title{
+    font-size: 18px;
+    line-height: 1.5;
+    height: 54px;
+    overflow: hidden;
+}
+.comment{
+    font-size: 15px;
+    color: gray;
+}
+.icon{
+    color: red;
+    font-size: 12px;
+}
+.current{
+    color: red;
+    font-size: 20px;
+}
+/* 
+before:...的前面；给标签添加前缀
+content:前缀的内容；
+
+after:...的后面；给标签添加后缀;
+
+可以设置各种需要的样式。
+*/
+.current::before{
+    content: "￥";
+    font-size: 12px;
+}
+.origin,.sale{
+    color: gray;
+}
+.sale{
+    margin-left: 80px;
+}

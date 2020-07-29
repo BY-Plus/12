@@ -1,0 +1,27 @@
+ul{
+    line-height: 3;
+    background-color: lightgray;
+}
+ul >li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 40px;
+}
+section{
+    height: 500px;
+}
+section:nth-child(1){
+    background-color: red;
+}
+section:nth-child(2){
+    background-color: yellow;
+}
+section:nth-child(3){
+    background-color: blue;
+}
+section:nth-child(4){
+    background-color: green;
+}
+section:nth-child(5){
+    background-color: purple;
+}

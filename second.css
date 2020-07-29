@@ -1,0 +1,64 @@
+body>div{
+    width: 400px;
+    /* 标签之间的换行、空格，浏览器会解析为一个空格；空格也是一个字符，想去掉，可以将字体大小改为0。 */
+    font-size: 0;
+}
+.title{
+    border-left: 4px solid #254282;
+    color: #254282;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.image-text:nth-of-type(1){
+    margin-right: 20px;
+}
+.image-text{
+    display: inline-block;
+    /* 
+    calc:计算函数;自动运算得到值；注意：+ - 前后打空格
+     */
+    width: calc((100% - 20px)/2);
+    overflow: hidden;
+}
+.image-text p {
+    font-size: 16px;
+    line-height: 2;
+    height: 64px;
+    overflow: hidden;
+    background-color: lightgray;
+    margin: 0;
+}
+.image-text p:hover{
+    background-color: skyblue;
+    color: white;
+}
+.image-text img{
+    /* %:以上层标签的尺寸为基准的比例值。 */
+    width: 100%;
+}
+
+ul{
+    font-size: 16px;
+    padding-left: 0;
+}
+ul li{
+    list-style-type: none;
+    line-height: 1.5;
+}
+ul li span{
+    color: red;
+    padding-right: 10px;
+    font-weight: bold;
+}
+ul li:nth-last-child(1) span, ul li:nth-last-child(2) span{
+    color: gray;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+

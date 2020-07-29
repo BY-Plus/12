@@ -1,0 +1,83 @@
+body>div{
+    width: 1600px;
+    height: 600px;
+    background-color: yellow;
+
+    /* 
+    背景图;
+    如何区分背景图和img? 鼠标右键看能不能复制图片地址、图片;能，是img。
+    图片上覆盖的有其他内容，一般采用背景图。
+    url:网址;设置背景图的地址。
+    */
+    background-image: url(./images/news.jpg);
+    /* 
+    背景图重复
+    repeat:重复；
+        repeat：重复，默认取值;
+        no-repeat:不重复;
+        repeat-x:水平方向重复；
+        repeat-y:竖直方向重复；
+    */
+    background-repeat: no-repeat;
+
+    /* 
+    背景图位置
+    position：位置；
+    两个值，第一个值代表水平方向位置；第二个值代表竖直方向的位置。
+    特殊位置：left\center\right top\center\bottom;
+    任意位置: 标签左上角为0,0;右下角为100%,100%;可以任意取值。
+    任意位置：标签左上角为0,0,；设置图片左上角距离标签左上角的水平方向、竖直方向的距离（像素值）；可以任意取值。
+    */
+    background-position: 0 0;
+
+    /* 
+    背景图大小
+    两个值，第一个值是宽度，第二值是高度; 可以以px\% 随意设置。注意一般只设置一个方向，另一个方向 auto(自适应),防止图片变形。
+    
+    特殊值：
+        contain:包含；背景图进行等比例缩放，遇到标签的边界就停止，图片会被包含在标签内，显示完整。一般结果是 一个方向填满，另一个有留白。
+        cover:覆盖，封面;背景图进行等比例缩放，直到完全覆盖标签。一般结果是 图片显示不完整。
+
+    */
+    background-size: cover;
+}
+
+body>p{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* 
+        图片精灵:将很多小图标合成到一张大图上;
+        减少请求次数，降低服务器压力。
+     */
+    background-image: url(./images/sprites.png);
+    background-position: 0 -107px;
+    background-size: 100px auto;
+}
+
+table,td,th,tr{
+    border: 1px solid lightgray;
+    /* 边框合并
+    collapse:合并，折叠
+    separate:分离 */
+    border-collapse: collapse;
+}
+table caption{
+    font-size: 25px;
+    font-weight: bold;
+}
+td,th{
+    width: 100px;
+    line-height: 2;
+    text-align: center;
+}
+
+section{
+    /* 字体风格
+    normal:正常;
+    italic:斜体
+    */
+    font-style: italic;
+}
+
+
